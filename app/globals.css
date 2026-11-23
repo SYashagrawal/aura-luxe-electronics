@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  html {
+    font-family: var(--font-inter);
+    background-color: #090909;
+    color: #F7F7F5;
+    scroll-behavior: smooth;
+  }
+}
+
+/* Luxury Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #090909;
+}
+::-webkit-scrollbar-thumb {
+  background: #2A2A2A;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A46D;
+}
+
+/* Metallic Champagne Text Highlight */
+.text-champagne-gradient {
+  background: linear-gradient(135deg, #EAD7B2 0%, #C5A46D 50%, #9B7742 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtle luxury borders */
+.border-subtle {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.border-subtle-light {
+  border-color: rgba(0, 0, 0, 0.08);
+}
